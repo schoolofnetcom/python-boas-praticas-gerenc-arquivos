@@ -119,7 +119,7 @@ def add_bank_account(account_data):
         'name': account_data[1],
         'password': account_data[2],
         'value': float(account_data[3]),
-        'admin': bool(account_data[4]),
+        'admin': True if account_data[4] == 'True' else 'False',
     }
 
 
